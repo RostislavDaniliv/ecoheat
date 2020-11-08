@@ -25,6 +25,16 @@
 		<link href="css/font-iconic/css/open-iconic-bootstrap.css" rel="stylesheet">
 
 		<title>RedHeat – Смарт отопление</title>
+		
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  
+
+  
+<script src="https://static.codepen.io/assets/editor/iframe/iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js"></script>
+<script src="https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
+<script src="https://static.codepen.io/assets/editor/iframe/iframeRuntimeErrors-29f059e28a3c6d3878960591ef98b1e303c1fe1935197dae7797c017a3ca1e82.js"></script>
 
 
 
@@ -72,7 +82,10 @@
 					<div class="col-12 col-lg-7 col-md-8 col-xl-6 mx-auto pb-4">
 						<div class="embed-responsive embed-responsive-16by9">
 							<!--iframe class="embed-responsive-item" height="100%" src="https://www.youtube.com/embed/w6RD38WbAGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
-							<div class="youtube  embed-responsive-item" id="w6RD38WbAGQ"></div>
+							<!--<div class="youtube  embed-responsive-item" id="w6RD38WbAGQ"></div>-->
+							<video width="600" height="400" poster="media/preview.jpg" controls="">
+								<source src="media/udens.mp4">
+							</video>
 						</div>
 					</div>
 					<div class="col-12 col-lg-5 col-md-10 mt-lg-4 mx-auto">
@@ -690,6 +703,64 @@
 				</tbody>
 			</table>
 		</div>
+		<!-- Каталоги -->
+		
+		<div style="background: #f1f1f1; padding: 1px;">
+		<h2 class="font-weight-normal py-3" style="text-align: center">ВЫ МОЖЕТЕ ВЫБРАТЬ <span class="orange font-weight-bold">ДИЗАЙН</span> ОБОГРЕВАТЕЛЬ ИЛИ ЛЮБОЙ ЦВЕТ ПО КАТАЛОГУ <span class="orange font-weight-bold">RAL</span> </h2>
+		<div class="blog-card">
+    <div class="meta">
+      <div class="photo" style="background-image: url(https://static.tildacdn.com/tild3965-6130-4139-a163-623561343731/222.png)"></div>
+      <ul class="details">
+        
+        
+        <li class="tags">
+          <ul>
+            
+            <li><a href="#"></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>ДИЗАЙН</h1>
+      <h2>2-й хедер</h2>
+      <p> Смотрите полный ассортимент всех наших дизайн обогревателей. </p>
+      <p class="read-more">
+        <a href="#">В КАТАЛОГ</a>
+      </p>
+    </div>
+  </div>
+  <div class="blog-card alt">
+    <div class="meta">
+      <div class="photo" style="background-image: url(https://static.tildacdn.com/tild3762-3332-4664-b331-623331306231/2222.png)"></div>
+      <ul class="details">
+      
+        
+        <li class="tags">
+          <ul>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>КАТАЛОГ RAL</h1>
+      <h2>2-й хедер</h2>
+      <p> Используйте каталог цветов RAL Classic для выбора необходимого вам оттенка.<p>
+      <p class="read-more">
+        <a href="#">В КАТАЛОГ</a>
+      </p>
+    </div>
+  </div>
+  </div>
+  
+  
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  <script id="INLINE_PEN_JS_ID">
+    
+    //# sourceURL=pen.js
+  </script>
+		
 		<!-- End pannels -->
 		<!-- Спец.предложение -->
 		<div class="container-fluid special pb-3">
@@ -1863,4 +1934,208 @@ var fca_code = '4b64f3afff61e43e0bef920ab13a9fae';
 <!-- {/literal} End FastcallAgent code -->
 
 	</body>
+	<style class="INLINE_PEN_STYLESHEET_ID">
+    /*PEN STYLES*/
+* {
+  box-sizing: border-box;
+}
+
+
+.blog-card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.blog-card a {
+  color: inherit;
+}
+.blog-card a:hover {
+  color: #5ad67d;
+}
+.blog-card:hover .photo {
+  -webkit-transform: scale(1.3) rotate(3deg);
+          transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  -webkit-transition: left .2s;
+  transition: left .2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: .9rem;
+}
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin .3s, opacity .3s;
+  transition: margin .3s, opacity .3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    max-width: 700px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+
+  </style>
 </html>
